@@ -25,6 +25,8 @@
                 class="form-control" 
                 id="user_name" 
                 placeholder="Например: Иван"
+                required
+                pattern="^[А-Я][А-Яа-я0-9- ]{0,100}$"
             />
             <small class="form-text text-muted">
                 * Это поле обязательно к заполнению.
@@ -43,6 +45,8 @@
                 class="form-control" 
                 id="user_inn" 
                 placeholder="Например: 1234567890"
+                required
+                pattern="^[0-9]{10}$"
             />
             <small class="form-text text-muted">
                 * Это поле обязательно к заполнению.
@@ -61,6 +65,8 @@
                 class="form-control" 
                 id="user_pasport" 
                 placeholder="Например: АА123456 или 123456789"
+                required
+                pattern="^([А-Я]{2}[0-9]{6}|[0-9])$"
             />
             <small class="form-text text-muted">
                 * Это поле обязательно к заполнению.
